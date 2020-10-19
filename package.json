@@ -4,7 +4,9 @@
   "description": "A web application to investigate housing in West Atlanta",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "server.js",
+    "build": "npm i -dev && webpack --mode production", 
+    "heroku-postbuild": "npm build",
     "dev": "nodemon --ignore feedback.json server.js"
   },
   "keywords": [],
