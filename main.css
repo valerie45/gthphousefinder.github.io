@@ -32,12 +32,12 @@ body {
   color: #FFFFFF;
 }
 
-.search bar {
+.search-bar {
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
-.search bar input[type=text] {
+.search-bar input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
