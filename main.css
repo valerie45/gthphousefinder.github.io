@@ -46,12 +46,13 @@ body {
   border: none;
 }
 
-.search-container button {
+.search-bar button {
   float: right;
   padding: 10px 10px;
   margin-top: 15px;
   margin-right: 16px;
-  background: #ddd;
+  background: #546A7B;
+  color: #E5E5E5;
   font-size: 17px;
   border: none;
   cursor: pointer;
