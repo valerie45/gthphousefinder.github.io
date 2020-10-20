@@ -3,16 +3,17 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto Slab;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #546A7B;
+;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: black;
   text-align: center;
@@ -23,45 +24,54 @@ body {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #000000;
 }
 
 .topnav a.active {
   background-color: #2196F3;
-  color: white;
+  color: #FFFFFF;
 }
 
-.topnav .search-container {
-  float: right;
+.search-bar {
+  overflow: hidden;
+  height: 30px
+  background-color: #e5e5e5;
+  padding: 5px;
 }
 
-.topnav input[type=text] {
+.search-bar input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
   border: none;
 }
 
-.topnav .search-container button {
+.search-bar button {
   float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
+  padding: 10px 10px;
+  margin-top: 15px;
   margin-right: 16px;
-  background: #ddd;
+  background: #546A7B;
+  color: #E5E5E5;
   font-size: 17px;
   border: none;
   cursor: pointer;
 }
 
-.topnav .search-container button:hover {
+.search-bar button:hover {
   background: #ccc;
+}
+
+.search-container {
+  border: 2px black;
+  padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
   }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
+  .topnav a, .search-bar input[type=text], .topnav .search-bar .search-bar button {
     float: none;
     display: block;
     text-align: left;

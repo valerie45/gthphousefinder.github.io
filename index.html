@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<style></style>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>West ATL Preservation Initative</title>
+  <style></style>
+
 </head>
 <body>
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <div class="search-container">
-    <form action = "/action_page.php">
-      <input type="text" placeholder="Zip Code..." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-  <div class="search-container">
+  <a href="#contact" style="float: right">Contact</a>
+  <a href="#about" style="float: right">About</a>
+  <a class="active" href="#home" style="float:right">Home</a>
+</div>
+  
+<div class = "search-bar">
+  <div class="search-container" style="float: left">
     <form action = "/action_page.php">
       <input type="text" placeholder="Price min..." name="search ">
-      <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
-  <div class="search-container">
+  <div class="search-container" style="float: left">
     <form action="/action_page.php">
       <input type="text" placeholder="Price max.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
+  <div class="search-container" style="float: left">
+    <form action = "/action_page.php">
+      <input type="text" placeholder="Zip Code..." name="search">
+    </form>
+  </div>
+  <button type="submit"><i class="fa fa-search">Search</i></button>
 </div>
 
 <div style="padding-left:16px">
