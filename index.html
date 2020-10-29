@@ -17,21 +17,14 @@
   
 <div class = "search-bar">
   <div class="search-container" style="float: left">
-    <form action = "/action_page.php">
-      <input type="text" placeholder="Price min..." name="search ">
+    <form id=searchEntry action = "/action_page.php">
+      <input type="text" placeholder="Price min..." name="priceMin">
+      <input type="text" placeholder="Price max.." name="priceMax">
+      <input type="text" placeholder="Zip Code..." name="zipcode">
+      <input type="submit" onclick=" value="Submit"><i class="fa fa-search">Search</i></button>
     </form>
   </div>
-  <div class="search-container" style="float: left">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Price max.." name="search">
-    </form>
-  </div>
-  <div class="search-container" style="float: left">
-    <form action = "/action_page.php">
-      <input type="text" placeholder="Zip Code..." name="search">
-    </form>
-  </div>
-  <button type="submit"><i class="fa fa-search">Search</i></button>
+  <a href="/search">Search</a>
 </div>
 
 <div style="padding-left:16px">
@@ -42,3 +35,4 @@
 
 </body>
 </html>
+
