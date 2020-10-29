@@ -39,6 +39,9 @@ body {
   padding: 5px;
 }
 
+.search-bar form {
+  margin: 20px;
+
 .search-bar input[type=text] {
   padding: 6px;
   margin-top: 8px;
