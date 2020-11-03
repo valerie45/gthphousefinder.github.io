@@ -17,11 +17,11 @@
   
 <div class = "search-bar">
   <div class="search-container" style="float: left">
-    <form style="margin-bottom: 20px" id=searchEntry action = "/action_page.php">
+    <form id=searchEntry action = "/action_page.php">
       <input type="text" placeholder="Price min..." name="priceMin">
       <input type="text" placeholder="Price max.." name="priceMax">
       <input type="text" placeholder="Zip Code..." name="zipcode">
-      <input type="submit" onclick="" value='Submit'><i class="fa fa-search">Search</i></button>
+      <input type="submit" onclick="//SOME_FUNCTION().js" value="Submit"><i class="fa fa-search">Search</i></button>
     </form>
   </div>
   <a href="/search">Search</a>
@@ -32,6 +32,19 @@
   <p>This is a web interface created for GTHP to find properties that meet geographic, taxation, and historic criteria to be revitalized and sold as affordable housing.</p>
   <p>As of now, the website should be formatted such that sizing stays consistent across devices.</p>
 </div>
+
+<ul>
+  search returned <%=results.length %> results
+  <% for(var result of results) { %>
+    <ul>
+      <li><%=result.SITEADDRESS %></li>
+      <li>ZIP: <%=result.SITEZIP %></li>
+      <li>Total Appraisal: <%=result.TOT_APPR %></li>
+      <li>Improvement :<%=result.IMPR_APPR %></li>
+      <li>Built: <%=result.CREATED_DATE %></li>
+    </ul>
+  <% } %>    
+</ul>
 
 </body>
 </html>
