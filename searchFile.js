@@ -14,7 +14,7 @@ function search(totalPriceMin=0, totalPriceMax=10000000, zipCodes=["31106", "311
 
 	var params = {
 		priceMin: totalPriceMin,
-		priceMax: totalPriceMin,
+		priceMax: totalPriceMax,
 		zip: zipCodes,
 		imprvMax: imprvMax
 	};

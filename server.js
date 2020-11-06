@@ -23,6 +23,14 @@ app.get('/', (request, response) => {
 	response.render('pages/index', { results });
 });
 
+app.get('/instructions', (request, response) => {
+	response.render('pages/instructions');
+});
+
+app.get('/data', (request, response) => {
+	response.render('pages/data');
+});
+
 //Runs when the user navigates to <some_url>/search. 
 //Currently runs a search, logs the results to console, and then displays the main page.
 app.post('/search', urlencodedParser, function(req, res) {
