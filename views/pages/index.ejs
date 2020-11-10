@@ -38,22 +38,27 @@
     price min: <%=params.priceMin %>&ensp;
     price max: <%=params.priceMax %>&ensp;
     improvement max: <%=params.imprvMax %></p>
-  <ul>
+  
+    <table> 
+      <th>Site Address</th>
+      <th>Zip</th>
+      <th>Total Appraisal</th>
+      <th>Improvement</th>
+      <th>Build</th>
+    </tr>
     search returned <%=results.length %> results
     <% for(var result of results) { %>
-      <ul>
-        <li><%=result.SITEADDRESS %></li>
-        <li>Neighborhood: <%=result.NGHBRHDCD %></li>
-        <li>ZIP: <%=result.SITEZIP %></li>
-        <li>Total Appraisal: $<%=result.TOT_APPR %></li>
-        <li>Improvement Value: $<%=result.IMPR_APPR %></li>
-        <li>Zone: <%=result.CLASSCD %></li>
-        <li>Owner: <%=result.OWNERNME1 %></li>
-        <br>
-      </ul>
-    <% } %>    
-  </ul>
-
+      <tr>
+        <td><%=result.SITEADDRESS %></td>
+        <td><%=result.NGHBRHDCD %></td>
+        <td><%=result.SITEZIP %></td>
+        <td>$<%=result.TOT_APPR %></td>
+        <td>$<%=result.IMPR_APPR %></td>
+        <td><%=result.CLASSCD %></td>
+        <td><%=result.OWNERNME1 %></td>
+      </td>
+    <% } %> 
+</table>   
 <% } %>
 </div>
 
