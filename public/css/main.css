@@ -108,7 +108,8 @@ form {
 p {
   display: flex;
   flex-wrap: wrap;
-  max-width: 150px;
+  margin: 15px;
+  font-size: medium;
 }
 
 td, th {
@@ -120,8 +121,6 @@ table {
   display: flex;
   justify-content: center;
 }
-<<<<<<< Updated upstream
-=======
 
  .try{ border: 1px solid rgb(37, 37, 37);
 }
@@ -143,4 +142,3 @@ table {
   .text2 {
     color: rgb(44, 38, 38);
   }
->>>>>>> Stashed changes
