@@ -3,7 +3,7 @@
 <head>
   <div class = "hearder-container"> 
     <img id= pic src ="https://www.georgiatrust.org/wp-content/themes/ga-trust-nineteen/assets/images/logo_horiz_sm.png">
-    </div>
+  </div>
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>West ATL Preservation Initative</title>
@@ -35,11 +35,14 @@
 
 <div class="search-info">
 <%if (results != null) {%>
-  <p class = "result-formating">showing results for:&ensp;
-    zip codes: <%=params.zip %>&ensp;
-    price min: <%=params.priceMin %>&ensp;
-    price max: <%=params.priceMax %>&ensp;
-    improvement max: <%=params.imprvMax %></p>
+    <p class = "result-formating">showing results for:&ensp;
+    <li>zip codes: <%=params.zip %>&ensp; </li>
+    <li>price min: <%=params.priceMin %>&ensp; </li>
+    <li>price max: <%=params.priceMax %>&ensp;</li>
+    <li>improvement max: <%=params.imprvMax %></li>
+  </p>
+    
+
     <table> 
       < <th>Site Address</th>
       <th>Zip</th>

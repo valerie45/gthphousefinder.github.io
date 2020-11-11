@@ -105,10 +105,12 @@ form {
   flex-direction: column;
   justify-content: flex-start;
 }
-.result-formating{
+p {
   display: flex;
   flex-wrap: wrap;
+  max-width: 150px;
 }
+
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
